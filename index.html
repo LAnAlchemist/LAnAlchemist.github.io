@@ -1,11 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <p>My first web page.</p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linna An, Ph.D. in Chemistry</title>
+    <style>
+        /* You can add your own CSS styles here */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 36px;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            margin: 40px;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .profile-content {
+            margin-left: 40px;
+        }
+        .profile-content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .profile-content p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        .skills {
+            margin: 40px;
+        }
+        .skills h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .skills ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills li {
+            font-size: 18px;
+            background-color: #eee;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        .contact {
+            margin: 40px;
+        }
+        .contact h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .contact ul {
+            list-style: none;
+        }
+        .contact li {
+            font-size: 18px;
+            margin: 10px;
+        }
+        .contact a {
+            color: #333;
+            text-decoration: none;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to my personal website!</h1>
+        </div>
+        <div class="profile">
+            <img src="linnaan.png" alt="LA photo" class="profile-image">
+            <div class="profile-content">
+                <h2>Welcome to Linna An's website!</h2>
+                <p>I was trained as a biochemist during Ph.D. at Wilfred van der Donk lab at the University of Illinois Urbana-Champaign.</p>
+                <p>Then I joined the Baker lab at University of Washtingon as a protein designer, learning how to use machine learning-based method to design functional proteins.</p>
+                <a href="LA_CV.pdf">CV (ver 2024 Jan 01)</a>
+            </div>
+        </div>
+        
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <ul>
+                <li>Email: linnaan[a]uw.edu</li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/linna-an-2539b739/">Linna An</a></li>
+                <li>GitHub: <a href="https://github.com/LAnAlchemist">LAnAlchemist</a></li>
+                <!-- You can add more contact details here -->
+            </ul>
+        </div>
+        <div class="footer">
+            <p>© 2024 Linna An. All rights reserved.</p>
+        </div>
+    </div>
+</body>
 </html>
