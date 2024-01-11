@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
+    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linna An, Ph.D. in Chemistry</title>
@@ -12,7 +15,7 @@
             padding: 0;
         }
         .container {
-            max-width: 1200px;
+            max-width: 2400px;
             margin: 0 auto;
         }
         .header {
@@ -22,6 +25,7 @@
             text-align: center;
         }
         .header h1 {
+            font-family: 'Ubuntu';
             font-size: 36px;
         }
         .profile {
@@ -39,26 +43,32 @@
             margin-left: 40px;
         }
         .profile-content h2 {
+            font-family: 'Ubuntu';
             font-size: 24px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
         .profile-content p {
+            font-family: 'Ubuntu';
             font-size: 18px;
             line-height: 1.5;
+
         }
         .skills {
             margin: 40px;
         }
         .skills h2 {
+            font-family: 'Ubuntu';
             font-size: 24px;
             margin-bottom: 10px;
         }
         .skills ul {
+            font-family: 'Ubuntu';
             list-style: none;
             display: flex;
             flex-wrap: wrap;
         }
         .skills li {
+            font-family: 'Ubuntu';
             font-size: 18px;
             background-color: #eee;
             padding: 10px;
@@ -66,16 +76,20 @@
             border-radius: 10px;
         }
         .contact {
+            font-family: 'Ubuntu';
             margin: 40px;
         }
         .contact h2 {
+            font-family: 'Ubuntu';
             font-size: 24px;
             margin-bottom: 10px;
         }
         .contact ul {
+
             list-style: none;
         }
         .contact li {
+            font-family: 'Ubuntu';
             font-size: 18px;
             margin: 10px;
         }
@@ -84,25 +98,32 @@
             text-decoration: none;
         }
         .footer {
+            font-family: 'Ubuntu';
             background-color: #333;
             color: white;
             padding: 20px;
             text-align: center;
         }
+    
     </style>
 </head>
+
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
     <div class="container">
         <div class="header">
-            <h1>Welcome to my personal website!</h1>
+            <h1>Functional Proteins: Discovery & Design</h1>
+            <h2>Biosynthesis & Computational Design</h2>
         </div>
         <div class="profile">
             <img src="linnaan.png" alt="LA photo" class="profile-image">
             <div class="profile-content">
                 <h2>Welcome to Linna An's website!</h2>
-                <p>I was trained as a biochemist during Ph.D. at Wilfred van der Donk lab at the University of Illinois Urbana-Champaign.</p>
-                <p>Then I joined the Baker lab at University of Washtingon as a protein designer, learning how to use machine learning-based method to design functional proteins.</p>
-                <a href="LA_CV.pdf">CV (ver 2024 Jan 01)</a>
+                <p>I was trained as a biochemist during Ph.D. at <strong><em><a href="https://www.vanderdonk.scs.illinois.edu/" target="_blank">Wilfred van der Donk lab</a></em></strong> at the University of Illinois Urbana-Champaign.</p>
+                <p>Then I joined the <strong><em><a href="https://www.bakerlab.org/" target="_blank">Baker lab</a></em></strong> at University of Washtingon as a protein designer, learning how to use machine learning-based method to design functional proteins.</p>
             </div>
         </div>
         
@@ -110,11 +131,19 @@
             <h2>Contact Me</h2>
             <ul>
                 <li>Email: linnaan[a]uw.edu</li>
+                <li>
+                  <a href="LA_CV.pdf">Curriculum Vitae</a>
+                </li>
                 <a href="https://github.com/LAnAlchemist">
-                  <ion-icon name="logo-github"></ion-icon>
+                  <ion-icon name="logo-github" size="large"></ion-icon>
                 </a>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/linna-an-2539b739/">Linna An</a></li>
-                <li>GitHub: <a href="https://github.com/LAnAlchemist">LAnAlchemist</a></li>
+                <a href="https://www.linkedin.com/in/linna-an-2539b739/">
+                  <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                </a>
+                <a href="https://twitter.com/alchemist_an">
+                  <ion-icon name="logo-twitter" size="large"></ion-icon>
+                </a>
+                
                 <!-- You can add more contact details here -->
             </ul>
         </div>
@@ -122,7 +151,7 @@
             <p>© 2024 Linna An. All rights reserved.</p>
         </div>
     </div>
-/add to allow use of logo https://ionic.io/ionicons/usage
+<!--add to allow use of logo https://ionic.io/ionicons/usage-->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
