@@ -1,158 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-    
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linna An homepage</title>
-    <style>
-        /* You can add your own CSS styles here */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 2400px;
-            margin: 0 auto;
-        }
-        .header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        .header h1 {
-            font-family: 'Ubuntu';
-            font-size: 36px;
-        }
-        .profile {
-            display: flex;
-            align-items: center;
-            margin: 40px;
-        }
-        .profile-image {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        .profile-content {
-            margin-left: 40px;
-        }
-        .profile-content h2 {
-            font-family: 'Ubuntu';
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-        .profile-content p {
-            font-family: 'Ubuntu';
-            font-size: 18px;
-            line-height: 1.5;
-
-        }
-        .skills {
-            margin: 40px;
-        }
-        .skills h2 {
-            font-family: 'Ubuntu';
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .skills ul {
-            font-family: 'Ubuntu';
-            list-style: none;
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .skills li {
-            font-family: 'Ubuntu';
-            font-size: 18px;
-            background-color: #eee;
-            padding: 10px;
-            margin: 10px;
-            border-radius: 10px;
-        }
-        .contact {
-            font-family: 'Ubuntu';
-            margin: 40px;
-        }
-        .contact h2 {
-            font-family: 'Ubuntu';
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-        .contact ul {
-
-            list-style: none;
-        }
-        .contact li {
-            font-family: 'Ubuntu';
-            font-size: 18px;
-            margin: 10px;
-        }
-        .contact a {
-            color: #333;
-            text-decoration: none;
-        }
-        .footer {
-            font-family: 'Ubuntu';
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-    
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<head>
-  <link rel="stylesheet" href="styles.css">
-</head>
 
 <body>
     <div class="container">
+        <div class="topnav">
+            <a href="index.html#contact">contact</a>
+            <a href="index.html#news">news</a>
+            <a href="index.html#profile">about</a>
+        </div>
         <div class="header">
-            <h1>Functional Proteins: Discovery & Design</h1>
-            <h2>Biosynthesis & Computational Design</h2>
+            <h1>Design for Enzyme: tool development and profile engineering</h1>
+            <h2>- Integrate AI and experiments -</h2>
+        </div>
+        <div class="center">
+            <div class="contact">
+                
+                <h2><div id="contact"><a name="contact"></a>Contact Me</a></div></h2>
+                <ul>
+                    <li>Email: linnaan[a]uw.edu</li>
+                    <li>
+                      <a href="LA_CV.pdf">Curriculum Vitae [click for pdf version]</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/LAnAlchemist" target="_blank">
+                        <ion-icon name="logo-github" size="large"></ion-icon>
+                      </a>
+                      <a href="https://www.linkedin.com/in/linna-an-2539b739/" target="_blank">
+                        <ion-icon name="logo-linkedin" size="large"></ion-icon>
+                      </a>
+                      <a href="https://twitter.com/alchemist_an" target="_blank">
+                        <ion-icon name="logo-twitter" size="large"></ion-icon>
+                      </a>
+                      <a href="https://scholar.google.com/citations?user=U-_jk7oAAAAJ&hl=en" target="_blank">
+                        <ion-icon name="logo-google" size="large"></ion-icon></ion-icon>
+                      </a>
+                    </li>
+                    
+                    <!-- You can add more contact details here -->
+                </ul>
+            </div>
         </div>
         <div class="profile">
             <img src="linnaan.png" alt="LA photo" class="profile-image">
             <div class="profile-content">
-                <h2>Welcome to Linna An's website!</h2>
+                <h2><div id="profile"><a name="profile">The research career of Linna An</a></div></h2>
                 <p>I did my undergrad at the University of Science and Technology of China (USTC) with Prof. Gaolin Liang on molecular imaging.</p>
-                <p>Then, I was trained as a biochemist during Ph.D. at <strong><em><a href="https://www.vanderdonk.scs.illinois.edu/" target="_blank">Wilfred van der Donk lab</a></em></strong> at the University of Illinois Urbana-Champaign (UIUC).</p>
-                <p>Right before COVID, I joined the <strong><em><a href="https://www.bakerlab.org/" target="_blank">Baker lab</a></em></strong> at University of Washtingon (UW) as a protein designer, developing machine learning-based method to design functional proteins.</p>
+                <p>Then, I was trained as a biochemist during Ph.D. at <strong><em><a href="https://www.vanderdonk.scs.illinois.edu/" target="_blank">Wilfred van der Donk lab</a></em></strong> at the University of Illinois Urbana-Champaign (UIUC). I worked on using bioinformatics to find new biosynthetic gene clusters, and characterize them in lab. I successfully heterologously expressed a new antibiotic, duramycin, and particularly, I unveiled a  unique substrate-assisted bond formation mechanism in a previously unknown family of enzymes <a href="https://www.nature.com/articles/s41589-018-0122-4" target="_blank">(An, Nat. Chem. Biol. 2018)</a>.</p>
+                <p>Right before COVID, I joined the <strong><em><a href="https://www.bakerlab.org/" target="_blank">Baker lab</a></em></strong> at University of Washtingon (UW) as a protein designer, developing deep learning-based method to design functional proteins. </p>
+                <p>
+
+                </p>
+                <p>
+                    I focused on small molecule-protein interaction problems because it is the unavoidable  problem to crack for any ligand-related engineering problem. It was difficult to deal with back in 2020, and the same challenges remain till today: the large sampling space, the high accuracy requirements, and little datasets. I came up with a probably obvious idea: if we can generate proteins with high shape complementary  interfaces to ligands, we should be able to bind it. Even though it was an seemingly obvious and easy idea, it took us 3.5 years to actually make it happen in reality, during which almost all steps are optimized or equipped with new tools.
+                </p>
+                <p>
+                    I first teamed up with Dr. Derrick R . Hicks and Dr. Dmitri Zorine (now developer at <a href="https://x.com/ZipBio_Inc" target="_blank">ZipBio, Inc</a>), and we developed a AF2-based hallucination method, which can efficiently sample diverse pocket-containing proteins. They are high quality, and ready to bind any shape of ligands <strong><a href="https://www.nature.com/articles/s41594-023-01112-6" target="_blank">(An, Hicks, Zorine, et al, Nat. Struct. Mol. Biol, 2023)</a></strong>.
+                </p>
+                <p>
+                    With high-quality proteins, I then worked on the actual ligand binding problem. I first computationally identified the most shape complementary protein docking to the ligand, then in the laboratory, using high-throughput methods to identify the ones who are actually suitable to the ligand. From the privileged protein-ligand pair, with computational sampling of local structures and docking conformations, I  was able to quickly improve the binding affinity to nanomolar range. This pipeline stably generated binders to diverse ligands, including polar and flexible ligands, such as methotrexate, for the first time!  We easily converted the de novo binders into ligand-specific sensors, and showed their usage in ligand-specific nanopore and chemical induced dimerization. <strong><a href="https://www.science.org/doi/10.1126/science.adn3780?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed" target="_blank">(An, Science, 2024)</a></strong>.
+                </p>
+                <p>
+                    Currently, with my colleagues, I successfully implemented the whole idea to Ca-Diffusion (unpublished), and we demonstrated it carried over its success in more ligands stably, and stayed specific in cells.
+                </p>
+                <p>
+                    Another direction I am pushing forward is, using the small-molecule protein manipulation pipeline I developed to engineer enzymes. Stay tuned for all interesting results! Ultimately, I want to build my team and/or form a team with others, in both acamedia and industry, tackle questions of sensing and enzyme domestication!
+                </p>
+                <p>
+                    <u><a href="index.html#contact">Currently, I am in the job market. Do let me know if you are interested!</a></u>
+                </p>
             </div>
         </div>
         
-        <div class="contact">
-            <h2>Contact Me</h2>
-            <ul>
-                <li>Email: linnaan[a]uw.edu</li>
-                <li>
-                  <a href="LA_CV.pdf">Curriculum Vitae</a>
-                </li>
-                <li>
-                  <a href="https://github.com/LAnAlchemist" target="_blank">
-                    <ion-icon name="logo-github" size="large"></ion-icon>
-                  </a>
-                  <a href="https://www.linkedin.com/in/linna-an-2539b739/" target="_blank">
-                    <ion-icon name="logo-linkedin" size="large"></ion-icon>
-                  </a>
-                  <a href="https://twitter.com/alchemist_an" target="_blank">
-                    <ion-icon name="logo-twitter" size="large"></ion-icon>
-                  </a>
-                  <a href="https://scholar.google.com/citations?user=U-_jk7oAAAAJ&hl=en" target="_blank">
-                    <ion-icon name="logo-google" size="large"></ion-icon></ion-icon>
-                  </a>
-                </li>
-                
-                <!-- You can add more contact details here -->
-            </ul>
+        <div class="skills">
+            <h2><div id="news"><a name="news">News</a></div></h2>
+            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Check out how we use ML-assisted method to design small molecule binders (binder to polar and flexible ligands as well!) and turn binding to sensing via CID and nanopore. <a href="https://twitter.com/UWproteindesign?ref_src=twsrc%5Etfw">@UWproteindesign</a> Art credit to <a href="https://twitter.com/ichaydon?ref_src=twsrc%5Etfw">@ichaydon</a> | Science <a href="https://t.co/N4jUZFVvfQ">https://t.co/N4jUZFVvfQ</a> <a href="https://t.co/DkWKceTEfR">pic.twitter.com/DkWKceTEfR</a></p>&mdash; Linna An (@alchemist_an) <a href="https://twitter.com/alchemist_an/status/1814022913064054808?ref_src=twsrc%5Etfw">July 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
         <div class="footer">
             <p>© 2024 Linna An. All rights reserved.</p>
         </div>
@@ -160,5 +92,26 @@
 <!--add to allow use of logo https://ionic.io/ionicons/usage-->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+    } else {
+    mybutton.style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 </body>
 </html>
