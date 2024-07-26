@@ -14,11 +14,9 @@ button {
     transition: background-color 0.3s;
     float: right;
 }
-
 button:hover {
     background-color: #0056b3;
 }
-
 /* Night Mode Styles */
 body.night-mode {
     background-color: #5f5d5d;
@@ -32,19 +30,37 @@ body.night-mode button {
 body.night-mode button:hover {
     background-color: #6cb7f5;
 }
+/* Default link color */
+a:link {
+    color: #25869e; /* Color for unvisited links */
+    text-decoration: none; /* Remove underline */
+    text-shadow: #0056b3;
+}
 
+/* Visited link color */
+a:visited {
+    color: #2f7a8d; /* Color for visited links */
+}
+
+/* Hover state */
+a:hover {
+    color: purple; /* Color when mouse is over the link */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Active state */
+a:active {
+    color: green; /* Color when link is clicked */
+}
 /*original working ones*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.a {
-    color: #25869e;
-    text-decoration: none;
-}
+
 .container {
-    max-width: 1800px;
+    max-width: 2800px;
     margin: 0 auto;
 }
 .header {
