@@ -5,17 +5,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check if night mode is already enabled in localStorage
     if (localStorage.getItem('night-mode') === 'enabled') {
         body.classList.add('night-mode');
-        toggleButton.textContent = 'Switch to Day Mode';
+        toggleButton.textContent = 'Day';
     }
 
     toggleButton.addEventListener('click', () => {
         if (body.classList.contains('night-mode')) {
             body.classList.remove('night-mode');
-            toggleButton.textContent = 'Switch to Night Mode';
+            toggleButton.textContent = 'Night';
             localStorage.setItem('night-mode', 'disabled');
         } else {
             body.classList.add('night-mode');
-            toggleButton.textContent = 'Switch to Day Mode';
+            toggleButton.textContent = 'Day';
             localStorage.setItem('night-mode', 'enabled');
         }
     });
