@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Protein Design Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1288px;
+            margin: 0 auto;
+        }
+
+        .problem-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .problem-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .problem-card h3 {
+            color: #25869e;
+            margin-bottom: 15px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .problem-card p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+
+        .problem-card ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .problem-card li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .colab-button {
+            display: inline-block;
+            background-color: #25869e;
+            color: white !important;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .colab-button:hover {
+            background-color: #1a5f6e;
+            color: white !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner-container">
+            <img id="banner-image" src="banner/IPD-designed-sensor-protein-2024.png" alt="Research Banner">
+            <div class="banner-overlay">
+                <h1 class="banner-title">QuickStart</h1>
+                <p class="banner-subtitle">Get Started with Protein Design</p>
+                <div class="banner-nav">
+                    <a href="index.html#profile">About</a>
+                    <a href="publications.html">Publications</a>
+                    <a href="research.html">Research</a>
+                    <a href="teams.html">Teams</a>
+                    <a href="positions.html">Positions</a>
+                    <a href="QuickStart.html">QuickStart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="profile-content">
+                <h2>Welcome to Protein Design!</h2>
+                <p>Want to have a peek at what you will learn in the lab? This page contains a series of problem sets designed to help you get started with protein design using Google Colab. Each problem set includes a Colab notebook and instructions to guide you through the process. </p>
+                <p>This page contains a series of problem sets designed to help you get started with protein design using Google Colab. Each problem set includes a Colab notebook and instructions to guide you through the process. Go through them, if you feel confortable using the scripts, you will be fine writing them (after hardwork learning) in the future.</p>
+                <p>Do not hesitate to contact me if you have any questions, want to report errors, or want to create your own problem sets.</p>
+
+                <div class="problem-grid">
+                    <div class="problem-card">
+                        <h3>Problem Set 1: Play with Pymol and Biotite</h3>
+                        <p>The fundamentals of protein structure and visualization.</p>
+                        <ul>
+                            <li>Introduction to PyMOL</li>
+                            <li>Basic protein visualization</li>
+                            <li>Understanding secondary structures</li>
+                        </ul>
+                        <a href="https://colab.research.google.com/drive/1DnHhQV3F8oCbrGS0fvrU-GwCd8jTQzkf?usp=chrome_ntp" class="colab-button">Open in Colab to play with it.</a>
+                    </div>
+
+                    <div class="problem-card">
+                        <h3>Problem Set 2: Protein-Ligand Complex prediction</h3>
+                        <p>Explore protein-ligand interactions prediction using AlphaFold-type of models.</p>
+                        <ul>
+                            <li>Generate Multiple sequence alignments (MSA) files.</li>
+                            <li>Run AlphaFold-type models to predict protein-ligand complexes</li>
+                        </ul>
+                        <a href="https://colab.research.google.com/drive/1wJFVN4w06jQWy-V2_zmPcX8jNxx74MIo?usp=sharing" class="colab-button">Open in Colab</a>
+                    </div>
+                </div>
+
+                
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 LAnAlchemist. All rights reserved.</p>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="banner.js"></script>
+    <script>
+        // button for go to top
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="day_night_theme.js"></script>
+</body>
+</html> 

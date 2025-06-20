@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Protein Design Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="fonts.css">
+    <meta name="google-site-verification" content="Zv_ZAfkZn4jn44YmcVpeVi6YpORFa_4Pf27mB1EZCtM" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="banner-container">
+            <img id="banner-image" src="banner/IPD-designed-sensor-protein-2024.png" alt="Research Banner">
+            <div class="banner-overlay">
+                <h1 class="banner-title">Research</h1>
+                <p class="banner-subtitle">Research Areas</p>
+                <div class="banner-nav">
+                    <a href="index.html#profile">About</a>
+                    <a href="publications.html">Publications</a>
+                    <a href="research.html" class="active">Research</a>
+                    <a href="teams.html">Teams</a>
+                    <a href="positions.html">Positions</a>
+                    <a href="QuickStart.html">QuickStart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="profile-content">
+                <h2>Research Areas</h2>
+                <p>Potential students and postdocs are welcome to discuss with Dr. An for future projects in details.</p>
+                <div class="research-section">
+                    <div class="research-box">
+                        <div class="figure-space">
+                            <!-- Placeholder for figure -->
+                            <img src="figures/CHD.gif" alt="Small Molecule Binder and Sensor Design" class="research-image">
+                        </div>
+                        <div class="research-content">
+                            <h3>Small Molecule Binder and Sensor Design</h3>
+                            <p>Our research focuses on designing protein-based sensors and binders for small molecules. Using computational methods and deep learning approaches, we create novel proteins that can specifically recognize and bind to target molecules. These designed proteins have applications in biosensing, diagnostics, and therapeutics.</p>
+                            <p>Key achievements include:</p>
+                            <ul>
+                                <li>Development of shape-complementary pseudocycles for small molecule binding</li>
+                                <li>Design of protein-based sensors for diverse small molecules</li>
+                                <li>Integration of computational design with experimental validation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="research-box">
+                        <div class="figure-space">
+                            <!-- Placeholder for figure -->
+                            <img src="figures/CHS.gif" alt="Enzyme Redesign" class="research-image">
+                        </div>
+                        <div class="research-content">
+                            <h3>Enzyme Redesign</h3>
+                            <p>We work on redesigning enzymes to achieve new functions and improved properties. Our approach combines computational protein design with experimental characterization to create enzymes with novel catalytic activities and enhanced stability.</p>
+                            <p>Research highlights:</p>
+                            <ul>
+                                <li>Engineering of enzyme active sites for new substrates</li>
+                                <li>Improvement of enzyme stability and activity</li>
+                                <li>Development of novel biocatalysts for industrial applications</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="research-box">
+                        <div class="figure-space">
+                            <!-- Placeholder for figure -->
+                            <img src="figures/diffusion.gif" alt="Protein Design Model Development" class="research-image">
+                        </div>
+                        <div class="research-content">
+                            <h3>Protein Design Model Development</h3>
+                            <p>We develop and improve computational models for protein design. Our work focuses on creating more accurate and efficient algorithms for all-atom style of de novo protein design and protein engineering.</p>
+                            <p>Main directions:</p>
+                            <ul>
+                                <li>Development of neural networks for protein structure generation</li>
+                                <li>Implementation of novel algorithms for protein design</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <div class="footer">
+            <p>© 2024 Linna An. All rights reserved.</p>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="banner.js"></script>
+    <script>
+        // button for go to top
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="day_night_theme.js"></script>
+</body>
+</html> 

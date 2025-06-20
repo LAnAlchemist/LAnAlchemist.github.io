@@ -3,33 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linna An homepage</title>
+    <title>Functional Protein Design Lab</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="fonts.css">
     <meta name="google-site-verification" content="Zv_ZAfkZn4jn44YmcVpeVi6YpORFa_4Pf27mB1EZCtM" />
 </head>
 
 
 <body>
     <div class="container">
-        <div class="topnav">
-            <button id="toggle-mode">Light</button>
-            <a href="index.html#contact">contact</a>
-            <a href="index.html#news">news</a>
-            <a href="index.html#Publication">publication</a>
-            <a href="index.html#profile">about</a>
-            
-            
+        <div class="banner-container">
+            <img id="banner-image" src="banner/IPD-designed-sensor-protein-2024.png" alt="Research Banner">
+            <div class="banner-overlay">
+                <h1 class="banner-title">Integrate AI and experiments</h1>
+                <p class="banner-subtitle">The Laboratory of Linna An 安琳娜, Ph.D</p>
+                <div class="banner-nav">
+                    <a href="index.html#profile">About</a>
+                    <a href="publications.html">Publications</a>
+                    <a href="research.html">Research</a>
+                    <a href="teams.html">Teams</a>
+                    <a href="positions.html">Positions</a>
+                    <a href="QuickStart.html">QuickStart</a>
+                </div>
+            </div>
         </div>
-        <div class="header">
-            <h1>Personal Page for Linna An, Ph.D</h1>
-            <h2>- Integrate AI and experiments -</h2>
-        </div>
+
         <div class="center">
             <div class="contact">
-                
                 <h2><div id="contact"><a name="contact"></a>Contact Me</a></div></h2>
                 <ul>
-                    <li>Email: linnaan[a]uw.edu</li>
+                    <li>Email: linnaan[at]uw.edu</li>
                     <li>
                       <strong><a href="LA_CV.pdf">Curriculum Vitae [click for pdf version]</a></strong>
                     </li>
@@ -51,48 +55,34 @@
                 </ul>
             </div>
         </div>
+        
         <div class="profile">
-            
             <div class="profile-content">
-                <h2><div id="profile"><a name="profile">The research career of Linna An</a></div></h2>
+                <h2><div id="profile"><a name="profile">Research: Functional Protein Design</a></div></h2>
+                <p>Nature takes millions of years to evolve functional proteins. Then traditional protein engineers need to spend years to engineer native proteins to desired functions. Sometimes, they work. Mostly, they don't.</p> 
+                <p>Using protein design, the <a href="https://www.youtube.com/watch?v=KbDvQgsOI-E&ab_channel=NobelPrize" target="_blank">2024 Nobel prize-winning technology</a>, we can fast-forward the evolution process and push the biomedical research and industry forward.</p>
+                <p>Get to know the PI at <a href="about_pi.html">About PI</a>. Get to know the research at <a href="research.html">Research</a></p>
+
+                <h2><div id="profile"><a name="profile">Join a ML4Biochem Team</a></div></h2>
                 <img src="linnaan.png" alt="LA photo" class="profile-image">
-                <p>I did my undergrad at the <strong><em></em><a href="https://en.ustc.edu.cn/" target="_blank">University of Science and Technology of China (USTC)</a></em></strong> with Prof. Gaolin Liang (now moved to SEU) on molecular imaging.</p>
-                <p>Then, I was trained as a biochemist during Ph.D. at the <strong><em><a href="https://www.vanderdonk.scs.illinois.edu/" target="_blank">Wilfred A. van der Donk lab</a></em></strong> at the <a href="https://chemistry.illinois.edu/" target="_blank"> University of Illinois Urbana-Champaign (UIUC)</a>. I worked on using bioinformatics to find new biosynthetic gene clusters, and characterize their synthesis product in lab. This is a new way to find new drugs from nature, including antibiotics. I successfully heterologously identified some new natrual products. Particularly, I also unveiled a unique substrate-assisted bond formation mechanism in a previously unknown family of enzymes <a href="https://www.nature.com/articles/s41589-018-0122-4" target="_blank">(An, Nat. Chem. Biol. 2018)</a>.</p>
-                <p>Right before COVID, I joined the <strong><em><a href="https://www.bakerlab.org/" target="_blank">David Baker lab</a></em></strong> at University of Washtingon (UW) as a protein designer, developing deep learning-based method to design functional proteins. </p>
-                <p>
-                    I focused on <strong>small molecule-protein interaction problems</strong> because it is the unavoidable mountain to climb for solving any ligand-related engineering problem. It was difficult to deal with back in 2020, and some challenges remain till today: the large sampling space, the high accuracy requirements, and small datasets. I came up with a probably obvious idea: if we can generate proteins with high shape complementary interfaces to ligands, we should be able to bind them. Even though it was an seemingly obvious and easy idea, it took us 3.5 years to actually make it happen in reality, during which almost all steps are optimized or equipped with new tools.
+                <p><u>We are hiring!</u></p>
+                <p>    
+                    I will start a new position as a assistant faculty member at Rice University, BioScience Department, with affiliations to other departments soon, stay tuned! If you are interested in working with me, as an undergraduate RA, technitian, graduate RA, or a postdoc, please check out the <a href="positions.html">positions</a> page and contact me at linnaan[at]rice.com
                 </p>
-                <p>
-                    I first teamed up with Dr. Derrick R . Hicks and Dr. Dmitri Zorine (now developer at <a href="https://x.com/ZipBio_Inc" target="_blank">ZipBio, Inc</a>), and we developed an AF2-based hallucination method, which can efficiently sample diverse pocket-containing proteins. These proteins are high quality, and ready to bind any shape of ligands <strong><a href="https://www.nature.com/articles/s41594-023-01112-6" target="_blank">(An, Hicks, Zorine, et al, Nat. Struct. Mol. Biol, 2023)</a></strong>.
-                </p>
-                <p>
-                    With high-quality proteins, I then worked on the actual ligand binding problems. I first computationally identified the most shape complementary protein docking to the ligand, then in the laboratory, using high-throughput methods to identify the ones who are actually suitable to the ligand. From the privileged protein-ligand pair, with computational sampling of local structures and docking conformations, I  was able to quickly improve the binding affinity to nanomolar range. This pipeline stably generated binders to diverse ligands, including polar and flexible ligands, such as methotrexate, for the first time!  We easily converted the de novo binders into sensors, and showed their usage in ligand-specific nanopore and chemical induced dimerization. <strong><a href="https://www.science.org/doi/10.1126/science.adn3780?url_ver=Z39.88-2003&rfr_id=ori:rid:crossref.org&rfr_dat=cr_pub%20%200pubmed" target="_blank">(An, Science, 2024)</a></strong>.
-                </p>
-                <p>
-                    More recently, with my colleagues, we successfully implemented the whole idea to Ca-Diffusion (<em>unpublished</em>), and we demonstrated it carried over its success in more ligands stably, and stayed specific in cells.
-                </p>
-                <p>
-                    Another direction I am pushing forward is, using the small-molecule protein manipulation pipeline I developed to engineer enzymes. Stay tuned for all interesting results! Ultimately, I want to build my team and/or form a team with others, in both acamedia and industry, tackle questions of sensing and enzyme domestication!
-                </p>
-                <p>
-                    <u><a href="index.html#contact">Currently, I am in the job market. Do let me know if you are interested!</a></u>
-                </p>
+                <p>Computational expertise is preferred but not required. You will be trained in the lab, for both experimental and computational research.</p>
+                <p>Want to quickly see if you will be interested in joining the lab? Check out the <a href="QuickStart.html">QuickStart</a> page! No prior experience is required.</p>
+
             </div>
         </div>
-        
-        <div class="skills">
-            <h2><div id="news"><a name="news">News</a></div></h2>
-            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Check out how we use ML-assisted method to design small molecule binders (binder to polar and flexible ligands as well!) and turn binding to sensing via CID and nanopore. <a href="https://twitter.com/UWproteindesign?ref_src=twsrc%5Etfw">@UWproteindesign</a> Art credit to <a href="https://twitter.com/ichaydon?ref_src=twsrc%5Etfw">@ichaydon</a> | Science <a href="https://t.co/N4jUZFVvfQ">https://t.co/N4jUZFVvfQ</a> <a href="https://t.co/DkWKceTEfR">pic.twitter.com/DkWKceTEfR</a></p>&mdash; Linna An (@alchemist_an) <a href="https://twitter.com/alchemist_an/status/1814022913064054808?ref_src=twsrc%5Etfw">July 18, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Thanks to all the organizers! <a href="https://t.co/hKTOw7NNJD">https://t.co/hKTOw7NNJD</a></p>&mdash; Linna An (@alchemist_an) <a href="https://twitter.com/alchemist_an/status/1834764019619483689?ref_src=twsrc%5Etfw">September 14, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
-        
-        <!-- 240920 add -->
-        <div class="skills">
-            <h2><div id="Publication"><a name="Publication">Selected Publication</a></div></h2>
+
+        <div class="profile">
+            <div class="profile-content">
+
+            <h2><div id="profile"><a name="profile">Selected Publication</a></div></h2>
             <div class="publication-list">
                 <div class="publication">
                     <input type="checkbox" id="pub20">
-                    <label for="pub20">20. J. Dauparas, G. Lee, R. Pecoraro, <strong>L. An</strong>, I. Anishchenko, C. Glasscock, D. Baker*, Atomic context-conditioned protein sequence design using LigandMPNN, 2024, Nature Methods, Accepted.</label>
+                    <label for="pub20">20. J. Dauparas, G. Lee, R. Pecoraro, <strong>L. An</strong>, I. Anishchenko, C. Glasscock, D. Baker*, Atomic context-conditioned protein sequence design using LigandMPNN, 2025, Nature Methods, Accepted.</label>
                     <div class="content">
                         <p>Ligand-aware protein sequence design neural network.</p>
                         <ul>
@@ -100,12 +90,11 @@
                         </ul>
                     </div>
                 </div>
-    
                 <div class="publication">
                     <input type="checkbox" id="pub19">
                     <label for="pub19">19. <strong>L. An*</strong>, M. Seid, L. Tran, S. Majumder, I. Goreshnik, G. Lee, J. Dauparas, I. Anishchenko, B. Coventry, A. Bera, A. Kang, P. M. Levine, V. Alvarez, A. Pillai, C. Norn, D. Feldman, D. Zorine, D. R. Hicks, X. Li, M. G. Sanchez, D. K. Vafeados, P. J. Salveson, A. A. Vorobieva, and D. Baker*. Binding and sensing diverse small molecules using shape complementary pseudocycles, 2024, Science, 385, 276.</label>
                     <div class="content">
-                        <p>Ligand-aware protein sequence design neural network.</p>
+                        <p>Ligand-binding and sensing protein design.</p>
                         <ul>
                             <li><a href="https://www.science.org/doi/10.1126/science.adn3780" target="_blank">on Science</a></li>
                             <li><a href="https://www.bakerlab.org/2024/07/17/designing-synthetic-smell-receptors/" target="_blank">Report from Baker lab</a></li>
@@ -137,14 +126,26 @@
                     <input type="checkbox" id="pub16">
                     <label for="pub16">16. <strong>L. An#*</strong> and G. R. Lee#*, De novo protein design using the blueprint builder in Rosetta, Current Protocols in Protein Science, 2020, 102,1, e116.</label>
                     <div class="content">
-                        <p>Ligand-aware protein sequence design neural network.</p>
+                        <p>Introduction of protein design using the blueprint builder in Rosetta.</p>
                         <ul>
                             <li><a href="https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/cpps.116" target="_blank">on Current Protocols</a></li>
                         </ul>
                     </div>
                 </div>
+                <a href="publications.html">See all publications</a>
             </div>
+        </div>
             <script src="scripts.js"></script>
+        </div>
+
+        <div class="skills">
+            <h2><div id="news"><a name="news">News</a></div></h2>
+
+            <div class="latest-tweets">
+                <h3>Latest Posts</h3>
+                <div class='sk-ww-linkedin-profile-post' data-embed-id='25551068' data-max-posts='5'></div>
+                <script src='https://widgets.sociablekit.com/linkedin-profile-posts/widget.js' defer></script>
+            </div>
         </div>
 
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -178,5 +179,8 @@ function topFunction() {
 }
 </script>
 <script src="day_night_theme.js"></script>
+<script src="banner.js"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script src="tweets.js"></script>
 </body>
 </html>

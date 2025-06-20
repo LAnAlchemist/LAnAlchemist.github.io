@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Protein Design Lab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="banner.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="banner-container">
+            <img id="banner-image" src="banner/IPD-designed-sensor-protein-2024.png" alt="Research Banner">
+            <div class="banner-overlay">
+                <h1 class="banner-title">Available Positions</h1>
+                <p class="banner-subtitle">Join Our Research Team</p>
+                <div class="banner-nav">
+                    <a href="index.html#profile">About</a>
+                    <a href="publications.html">Publications</a>
+                    <a href="research.html">Research</a>
+                    <a href="teams.html">Teams</a>
+                    <a href="positions.html">Positions</a>
+                    <a href="QuickStart.html">QuickStart</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile">
+            <div class="profile-content">
+                <h2>Exciting Opportunities</h2>
+                <p>I am excited to announce that I will be starting a new position soon, and I am actively seeking motivated researchers to join my team. We are looking for passionate individuals at various levels to contribute to our cutting-edge research projects. Generally, send your materials to Dr. Linna An (linnaan@rice.com), and I will get back to you as soon as possible. </p>
+                <p>This lab is open to all students and researchers who are interested in protein design and biotechnology, no prevoius experience needed, disregard nationality, race, gender, or religion. Full working visa will be supported. Please contact <a href="https://oiss.rice.edu/">Rice ISSS</a> if you have living, visa, or other immigration questions.</p>
+                <p>We look forward to hearing from you!</p>
+                <h2>Available Positions</h2>
+                
+                <div class="position-category">
+                    <h3>Undergraduate Researchers</h3>
+                    
+                    <p>We are looking for undergraduate students who are interested in gaining hands-on research experience. </p>
+                    <p>Position Requirements</p>
+                    <ul>
+                        <li>Passion</li>
+                        <li>Willingness to learn</li>
+                        <li>Willingness to collaborate</li>
+                    </ul>
+                    <p>How to apply?</p>
+                    <ul>
+                        <li>CV</li>
+                        <li>Up-to-date unofficial transcripts</li>
+                        <li>(Optional) A pharagraph of your past research summary if any</li>
+                    </ul>
+                </div>
+
+                <div class="position-category">
+                    <h3>Graduate Researchers</h3>
+                    <p>Position Requirements</p>
+                    <ul>
+                        <li>No previous computational experience needed, but you need to be willing to learn computation</li>
+                        <li>Preference of academic background in chemistry, biochemistry, computational fields</li>
+                        <li>Preference of experience with research or industry</li>
+                        <li>Preferred to have computational, biochemical, or molecular biological experimental experience</li>
+                        <li>Willing to work independently and in teams</li>
+                    </ul>
+                    <p>How to apply? Do feel free to contact before or after your graduate school application. If already applied to the graduate school, do make a note so Dr. An can pull your file out. For rotation students, please contact directly.</p>
+                    <ul>
+                        <li>CV</li>
+                        <li>Undergrad transcripts (inofficial is good enough)</li>
+                        <li>A pharagraph of your past research summary, if any.</li>
+                    </ul>
+                </div>
+
+                <div class="position-category">
+                    <h3>Postdoctoral Researchers</h3>
+                    <p>We welcome applications from postdoctoral researchers who want to advance their research careers. </p>
+                 
+                    <p>How to apply?</p>
+                    <ul>
+                        <li>CV</li>
+                        <li>one page cover letter  (at least contains one paragraph summarize your past work,  one pharagraph describe your future plan. You can talk about your future interests/proposals in future plans. At most 2 pages.)</li>
+                        <li>name and contact info of three reference</li>
+                    </ul>
+                </div>
+
+                <div class="position-category">
+                    <h2>Technical Staff</h2>
+                    <p>We are generally interested in hiring experimental research assistant and computational research assistant, please reach out with:</p>
+                    <ul>
+                    <li>Curriculum Vitae (CV)</li>
+                    <li>Up-to-date unofficial academic transcripts (for applicants who haven't graduated yet)</li>
+                    <li>Contact information for at least one reference (for applicants already holds a degree avobe or equal to bachelor)</li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 LAnAlchemist. All rights reserved.</p>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="banner.js"></script>
+    <script>
+        // button for go to top
+        let mybutton = document.getElementById("myBtn");
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="day_night_theme.js"></script>
+</body>
+</html> 

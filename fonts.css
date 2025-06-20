@@ -1,0 +1,26 @@
+@import url('https://fonts.cdnfonts.com/css/century-gothic');
+
+body {
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.banner-title {
+    font-family: 'Century Gothic', sans-serif;
+    font-weight: bold;
+}
+
+.banner-subtitle {
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.banner-nav a {
+    font-family: 'Century Gothic', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Century Gothic', sans-serif;
+}
+
+p, li, a {
+    font-family: 'Century Gothic', sans-serif;
+} 
