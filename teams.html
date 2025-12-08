@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Functional Protein Design Lab</title>
+    <link rel="icon" type="image/jpeg" href="figures/3.jpg">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="fonts.css">
@@ -37,6 +38,12 @@
             width: 100%;
             height: 300px;
             object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .member-image-zoom {
+            object-position: center 30%;
         }
 
         .member-info {
@@ -75,7 +82,7 @@
         <div class="banner-container">
             <img id="banner-image" src="banner/IPD-designed-sensor-protein-2024.png" alt="Research Banner">
             <div class="banner-overlay">
-                <h1 class="banner-title">Our Team</h1>
+                <h1 class="banner-title"><img src="figures/1.png" alt="">Our Team</h1>
                 <p class="banner-subtitle">Meet the Researchers</p>
                 <div class="banner-nav">
                     <a href="index.html#profile">About</a>
@@ -95,43 +102,76 @@
 
                 <div class="team-grid">
                     <div class="team-member">
-                        <img src="linnaan.png" alt="Linna An" class="member-image">
+                        <img src="figures/Linna_An.png" alt="Linna An" class="member-image">
                         <div class="member-info">
                             <h3>Linna An, Ph.D.</h3>
                             <p>Principal Investigator</p>
-                            <p>Expert in protein design and computational biology. Specializes in developing deep learning-based methods for designing functional proteins and studying small molecule-protein interactions.</p>
+                            <p><strong>Ph.D.</strong> University of Illinois at Urbana-Champaign (Advisor: Wilfred van der Donk)<br>
+                            <strong>B.S.</strong> University of Science and Technology of China, Chemistry</p>
+                            <p>Getting money, and hire people to spend the money in a way which is beneficial to the general public.</p>
                             <div class="member-links">
                                 <a href="about_pi.html">About PI</a>
-                                <a href="https://github.com/LAnAlchemist" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://scholar.google.com/citations?hl=en&user=U-_jk7oAAAAJ" target="_blank"><i class="fab fa-google"></i></a>
                                 <a href="https://www.linkedin.com/in/linna-an-2539b739/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://twitter.com/alchemist_an" target="_blank"><i class="fab fa-twitter"></i></a>
-                                <a href="https://scholar.google.com/citations?user=U-_jk7oAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a>
+                                <a href="https://x.com/alchemist_an" target="_blank"><i class="fab fa-twitter"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="team-member">
-                        <img src="banner/IPD-designed-sensor-protein-2024.png" alt="Researcher 1" class="member-image">
+                        <img src="figures/wenbo_ning.jpg" alt="Wenbo Ning" class="member-image member-image-zoom">
                         <div class="member-info">
-                            <h3>Pseudo Researcher 1</h3>
-                            <p>Postdoctoral Researcher</p>
-                            <p>Specializes in protein-ligand interactions and sensor development.</p>
+                            <h3>Wenbo Ning, Ph.D.</h3>
+                            <p>Postdoctoral Fellow</p>
+                            <p><strong>Ph.D.</strong> University of Florida (Advisor: Jeffrey D. Rudolf)<br>
+                            <strong>B.S.</strong> Nanjing Tech University, Applied chemistry</p>
+                            <p>Enzyme design, biocatalysis</p>
                             <div class="member-links">
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://scholar.google.com/citations?user=mkWekysAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a>
+                                <a href="https://www.linkedin.com/in/wenbo-darren-ning-4542012a7/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://x.com/wen_bo123" target="_blank"><i class="fab fa-twitter"></i></a>
                             </div>
                         </div>
                     </div>
 
                     <div class="team-member">
-                        <img src="banner/IPD-designed-sensor-protein-2024.png" alt="Researcher 2" class="member-image">
+                        <img src="figures/Yanapat_Janthana.jpg" alt="Yanapat Janthana" class="member-image">
                         <div class="member-info">
-                            <h3>Pseudo Researcher 2</h3>
-                            <p>Graduate Researcher</p>
-                            <p>Focuses on machine learning applications in protein design. Currently developing new algorithms for protein structure prediction.</p>
+                            <h3>Yanapat Janthana</h3>
+                            <p>Graduate RA (He/Him)</p>
+                            <p><strong>B.S.</strong> University of Oregon, Biochemistry</p>
+                            <p>Model development</p>
                             <div class="member-links">
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://scholar.google.com/citations?user=7TCKihoAAAAJ&hl=en&authuser=1" target="_blank"><i class="fab fa-google"></i></a>
+                                <a href="https://www.linkedin.com/in/yanapat-janthana-23983229a" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://github.com/PattyYJ" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="figures/Hayden_Stegall.jpg" alt="Hayden Stegall" class="member-image">
+                        <div class="member-info">
+                            <h3>Hayden Stegall</h3>
+                            <p>Graduate RA</p>
+                            <p><strong>B.S.</strong> University of Texas at Austin, Biochemistry</p>
+                            <p>Peptide binders, polyketide synthase engineering</p>
+                            <div class="member-links">
+                                <a href="https://scholar.google.com/citations?user=hS4u7XAAAAAJ&hl=en" target="_blank"><i class="fab fa-google"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="team-member">
+                        <img src="figures/Audrey_Zheng.png" alt="Audrey Zheng" class="member-image">
+                        <div class="member-info">
+                            <h3>Audrey Zheng</h3>
+                            <p>Undergraduate RA (she/her)</p>
+                            <p><strong>B.S.</strong> Rice University, Biological Sciences with a Biochemistry Concentration and Artificial Intelligence</p>
+                            <p>Tag free binder development for hormone monitoring for corticosterone</p>
+                            <div class="member-links">
+                                <a href="https://scholar.google.com/citations?hl=en&user=Ok7yHmMAAAAJ" target="_blank"><i class="fab fa-google"></i></a>
+                                <a href="https://www.linkedin.com/in/audrey-zheng-8567a2219/" target="_blank"><i class="fab fa-linkedin"></i></a>
                             </div>
                         </div>
                     </div>
