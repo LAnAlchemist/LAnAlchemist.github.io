@@ -81,6 +81,47 @@
         .member-links a:hover {
             color: #1a5f6e;
         }
+
+        .team-table-section {
+            margin: 30px auto 0;
+            max-width: 1200px;
+            padding: 0 20px 20px;
+        }
+
+        .team-table-wrapper {
+            overflow-x: auto;
+        }
+
+        .team-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .team-table th {
+            background-color: #25869e;
+            color: #ffffff;
+            text-align: left;
+            padding: 14px 18px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 600;
+        }
+
+        .team-table td {
+            padding: 14px 18px;
+            border-bottom: 1px solid #e6edf0;
+        }
+
+        .team-table tbody tr:nth-child(even) {
+            background-color: #f8fbfc;
+        }
+
+        .team-table tbody tr:last-child td {
+            border-bottom: none;
+        }
     </style>
 </head>
 <body>
@@ -175,21 +216,6 @@
                     </div>
 
                     <div class="team-member">
-                        <img src="figures/Audrey_Zheng.png" alt="Audrey Zheng" class="member-image">
-                        <div class="member-info">
-                            <h3>Audrey Zheng</h3>
-                            <p>Undergraduate RA (she/her)</p>
-                            <p><strong>B.S.</strong> Rice University, Biological Sciences with a Biochemistry Concentration and Artificial Intelligence</p>
-                            <p>Email: az81[at]rice.edu</p>
-                            <p>Tag free binder development for hormone monitoring for corticosterone</p>
-                            <div class="member-links">
-                                <a href="https://scholar.google.com/citations?hl=en&user=Ok7yHmMAAAAJ" target="_blank"><i class="fab fa-google"></i></a>
-                                <a href="https://www.linkedin.com/in/audrey-zheng-8567a2219/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="team-member">
                         <img src="figures/Fiona_Wong.jpg" alt="Fiona Wong" class="member-image">
                         <div class="member-info">
                             <h3>Fiona Wong</h3>
@@ -264,6 +290,28 @@
                                 <a href="https://github.com/karenpaco" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
+                    </div>
+                </div>
+
+                <div class="team-table-section">
+                    <h3>Past Team Members</h3>
+                    <div class="team-table-wrapper">
+                        <table class="team-table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Job at An Lab</th>
+                                    <th>Current Position</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Audrey Zheng</td>
+                                    <td>Undergraduate RA</td>
+                                    <td>Rice University</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
